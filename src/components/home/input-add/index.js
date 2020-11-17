@@ -16,6 +16,7 @@ class InputAdd extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
+    this.onKeyPress = this.onKeyPress.bind(this);
     this.state = {
       value: ''
     };
@@ -29,10 +30,18 @@ class InputAdd extends React.Component {
     store.dispatch(updateValue(e.target.value));
   }
 
+  onKeyPress(e) {
+    if (e.key === 'Enter') {
+      this.onClick();
+    }
+  }
+
   onClick() {
     const { value } = this.state;
-
     store.dispatch(addTask(value));
+    this.setState({
+      value: ''
+    });
   }
 
   render() {
@@ -41,7 +50,7 @@ class InputAdd extends React.Component {
     return (
       <Grid container spacing={1}>
         <Grid item xs={3}>
-          <TextField fullWidth value={value} onChange={this.onChange} label="Add task" />
+          <TextField fullWidth value={value} onChange={this.onChange} onKeyPress={this.onKeyPress} label="Add task" />
         </Grid>
         <Grid item xs={2}>
           <Button variant="contained" color="primary" onClick={this.onClick}>Add</Button>

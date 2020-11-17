@@ -1,0 +1,179 @@
+Index: .idea/codeStyles/Project.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/codeStyles/Project.xml	(date 1605619585367)
++++ .idea/codeStyles/Project.xml	(date 1605619585367)
+@@ -0,0 +1,49 @@
++<component name="ProjectCodeStyleConfiguration">
++  <code_scheme name="Project" version="173">
++    <option name="LINE_SEPARATOR" value="&#10;" />
++    <JSCodeStyleSettings version="0">
++      <option name="FORCE_SEMICOLON_STYLE" value="true" />
++      <option name="USE_DOUBLE_QUOTES" value="false" />
++      <option name="FORCE_QUOTE_STYlE" value="true" />
++      <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
++      <option name="VAR_DECLARATION_WRAP" value="2" />
++      <option name="OBJECT_LITERAL_WRAP" value="2" />
++      <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
++      <option name="SPACES_WITHIN_IMPORTS" value="true" />
++    </JSCodeStyleSettings>
++    <JetCodeStyleSettings>
++      <option name="PACKAGES_TO_USE_STAR_IMPORTS">
++        <value>
++          <package name="java.util" alias="false" withSubpackages="false" />
++          <package name="kotlinx.android.synthetic" alias="false" withSubpackages="true" />
++          <package name="io.ktor" alias="false" withSubpackages="true" />
++        </value>
++      </option>
++      <option name="PACKAGES_IMPORT_LAYOUT">
++        <value>
++          <package name="" alias="false" withSubpackages="true" />
++          <package name="java" alias="false" withSubpackages="true" />
++          <package name="javax" alias="false" withSubpackages="true" />
++          <package name="kotlin" alias="false" withSubpackages="true" />
++          <package name="" alias="true" withSubpackages="true" />
++        </value>
++      </option>
++    </JetCodeStyleSettings>
++    <codeStyleSettings language="JavaScript">
++      <option name="RIGHT_MARGIN" value="100" />
++      <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
++      <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
++      <option name="ALIGN_MULTILINE_FOR" value="false" />
++      <option name="METHOD_CALL_CHAIN_WRAP" value="2" />
++      <option name="IF_BRACE_FORCE" value="1" />
++      <option name="DOWHILE_BRACE_FORCE" value="1" />
++      <option name="WHILE_BRACE_FORCE" value="1" />
++      <option name="FOR_BRACE_FORCE" value="1" />
++      <indentOptions>
++        <option name="INDENT_SIZE" value="2" />
++        <option name="CONTINUATION_INDENT_SIZE" value="2" />
++        <option name="TAB_SIZE" value="2" />
++      </indentOptions>
++    </codeStyleSettings>
++  </code_scheme>
++</component>
+\ No newline at end of file
+Index: .idea/codeStyles/codeStyleConfig.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/codeStyles/codeStyleConfig.xml	(date 1605619585374)
++++ .idea/codeStyles/codeStyleConfig.xml	(date 1605619585374)
+@@ -0,0 +1,5 @@
++<component name="ProjectCodeStyleConfiguration">
++  <state>
++    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
++  </state>
++</component>
+\ No newline at end of file
+Index: src/components/home/input-add/actions.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>export const actionsType =  {\r\n  UPDATE_VALUE: 'UPDATE_VALUE'\r\n};\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/components/home/input-add/actions.js	(revision 74018b2e380b4be14cfa54d0eb42d61a8742170f)
++++ src/components/home/input-add/actions.js	(date 1605619531539)
+@@ -1,4 +1,3 @@
+-export const actionsType =  {
++export const actionsType = {
+   UPDATE_VALUE: 'UPDATE_VALUE'
+ };
+-
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/Project_Default.xml	(date 1605619373777)
++++ .idea/inspectionProfiles/Project_Default.xml	(date 1605619373777)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
++  </profile>
++</component>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1605619373816)
++++ .idea/misc.xml	(date 1605619373816)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JavaScriptSettings">
++    <option name="languageLevel" value="JSX" />
++  </component>
++  <component name="ProjectRootManager">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/my-react2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/my-react2.iml	(date 1605619373809)
++++ .idea/my-react2.iml	(date 1605619373809)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(date 1605619373830)
++++ .idea/modules.xml	(date 1605619373830)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/my-react2.iml" filepath="$PROJECT_DIR$/.idea/my-react2.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1605619373823)
++++ .idea/vcs.xml	(date 1605619373823)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git src/index.js src/index.js
+diff --git src/reducers.js src/reducers.js
+diff --git src/store.js src/store.js
+diff --git src/routes.js src/routes.js
+diff --git src/components/home/index.js src/components/home/index.js
+diff --git src/components/home/tasks/actions.js src/components/home/tasks/actions.js
+diff --git src/components/home/tasks/reducer.js src/components/home/tasks/reducer.js
+diff --git src/components/home/tasks/index.js src/components/home/tasks/index.js
+diff --git src/components/home/input-add/index.js src/components/home/input-add/index.js

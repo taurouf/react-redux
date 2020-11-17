@@ -6,20 +6,35 @@ import {
   Checkbox,
   Button
 } from '@material-ui/core';
+import { deleteTask, checkTask } from './actions';
+import store from '../../../store';
 
-const Task = ({ checked, label }) => (
+const onClick = (id) => (store.dispatch(deleteTask(id)));
+
+const onCheck = (id) => store.dispatch(checkTask(id));
+
+const Task = ({ checked, label, id }) => (
   <Grid container item xs={12}>
     <FormControlLabel
-      control={<Checkbox checked={checked} />}
+      control={<Checkbox checked={checked} onChange={() => onCheck(id)} />}
       label={label}
     />
-    <Button color="secondary">Delete</Button>
+    <Button onClick={() => onClick(id)} color="secondary">Delete</Button>
   </Grid>
 );
 
 const Tasks = ({ tasks }) => (
   <Grid container item xs={12}>
-    {tasks.map((task) => (<Task checked={task.checked} label={task.label} />))}
+    {
+      tasks.map((task) => (
+        <Task
+          checked={task.checked}
+          label={task.label}
+          id={task.id}
+          key={task.id}
+        />
+      ))
+    }
   </Grid>
 );
 

@@ -9,10 +9,12 @@ export const addTask = (value) => ({
   value
 });
 
-export const deleteTask = () => ({
-  type: actionsType.DELETE_TASK
+export const deleteTask = (id) => ({
+  type: actionsType.DELETE_TASK,
+  id
 });
 
-export const checkTask = () => ({
-  type: actionsType.CHECK_TASK
+export const checkTask = (id) => ({
+  type: actionsType.CHECK_TASK,
+  id
 });
